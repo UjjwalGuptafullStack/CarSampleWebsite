@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://www.dettagliodose.com"; // UNVERIFIED — update once domain is finalized
+const siteUrl = "https://ppfcarwash.netlify.app"; // PLACEHOLDER demo domain — update once a real domain is set
 
 export default function robots(): MetadataRoute.Robots {
   return {

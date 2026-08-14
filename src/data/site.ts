@@ -1,39 +1,35 @@
 // ---------------------------------------------------------------------------
-// CENTRAL SITE DATA
+// CENTRAL SITE DATA — DEMO / SAMPLE TEMPLATE
 // ---------------------------------------------------------------------------
-// Every fact in this file should be treated as PLACEHOLDER / DRAFT until
-// confirmed directly with DETTAGLIO DOSE. See the "Important Validation
-// Before Building" section of DETTAGLIO_DOSE_Business_Profile.md for the
-// full checklist (exact address, phone, pricing, warranty terms, brands
-// used, pickup/drop-off, photo usage rights, logo/colors, etc).
-//
-// Fields marked UNVERIFIED must be confirmed with the owner before this
-// site is presented as a finished commercial product.
+// This is a SAMPLE template site sent to prospective clients. All contact
+// details below are intentionally fake placeholders — NOT the real business's
+// phone, address, or social links — so demo traffic never reaches the real
+// DETTAGLIO DOSE. Replace every field here with confirmed real details when
+// building this out as an actual commercial site for a specific client.
 // ---------------------------------------------------------------------------
 
 export const business = {
   name: "DETTAGLIO DOSE",
   tagline: "Precision Detailing. Lasting Protection.",
   positioning: "Premium Automotive Detailing & Protection",
-  phone: "+91 90911 91109", // UNVERIFIED — confirm current number
-  phoneHref: "tel:+919091191109",
-  whatsappNumber: "919091191109", // UNVERIFIED — confirm WhatsApp-enabled number
-  email: "", // UNVERIFIED — no public email found
+  phone: "+91 99999 99999", // PLACEHOLDER — demo number, not real
+  phoneHref: "tel:+919999999999",
+  whatsappNumber: "919999999999", // PLACEHOLDER — demo number, not real
+  email: "", // PLACEHOLDER — no real email set for the demo
   address: {
-    line1: "Shop 3–5, Plot 106, Hitech City Main Road",
-    line2: "JNTU, Hyderabad, Telangana 500081",
-    // NOTE: LinkedIn activity references a second, inconsistent address
-    // ("Shop 1–5, before the HP Petrol Bunk, KPHB–Hitech City road").
-    // Confirm the single correct address before publishing.
-    mapsQuery: "Dettaglio Dose Hyderabad",
+    line1: "123 Sample Street, Demo Complex",
+    line2: "Sample Nagar, Hyderabad, Telangana 500001",
+    // PLACEHOLDER address — not a real location. Replace with the actual
+    // business address before this is used as anyone's real site.
+    mapsQuery: "Hyderabad",
   },
   // Short place names used in trust-strip stats, footer copy and metadata —
   // update these when retargeting the template to a new city/business.
   city: "Hyderabad",
   area: "Hitech City",
   hours: "10:00 AM – 9:00 PM, every day",
-  instagramUrl: "", // UNVERIFIED — add handle once confirmed
-  linkedinUrl: "https://in.linkedin.com/in/dettaglio-dose-50b562302",
+  instagramUrl: "", // PLACEHOLDER — add real handle when known
+  linkedinUrl: "", // PLACEHOLDER — add real profile when known
   googleRating: 4.8,
   googleReviewCount: 165,
   establishedYear: 2024,

@@ -51,8 +51,7 @@ export default function AboutPage() {
               {business.address.line2}
             </p>
             <p className="mt-3 text-xs text-muted">
-              Address under verification — an earlier location near the HP Petrol Bunk on the KPHB–Hitech City
-              road has also been referenced online. Confirm the current address before publishing.
+              Sample address for demo purposes — replace with the real business address before launch.
             </p>
           </div>
           <div className="rounded-2xl border border-border bg-surface p-6">

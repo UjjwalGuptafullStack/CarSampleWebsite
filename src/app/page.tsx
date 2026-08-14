@@ -145,9 +145,11 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <div className="mt-8">
-              <ExternalLinkButton href={business.linkedinUrl}>View recent work on LinkedIn</ExternalLinkButton>
-            </div>
+            {business.linkedinUrl ? (
+              <div className="mt-8">
+                <ExternalLinkButton href={business.linkedinUrl}>View recent work on LinkedIn</ExternalLinkButton>
+              </div>
+            ) : null}
           </div>
           <PlaceholderImage className="aspect-[4/5] w-full rounded-2xl" label="Studio / technician photo" />
         </div>

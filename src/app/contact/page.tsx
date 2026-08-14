@@ -58,7 +58,7 @@ export default function ContactPage() {
 
           <div className="overflow-hidden rounded-2xl border border-border">
             <iframe
-              title="Dettaglio Dose location map"
+              title={`${business.name} location map`}
               className="h-56 w-full"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

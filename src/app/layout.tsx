@@ -12,7 +12,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://www.dettagliodose.com"; // UNVERIFIED — set once domain is finalized
+const siteUrl = "https://ppfcarwash.netlify.app"; // PLACEHOLDER demo domain — update once a real domain is set
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
