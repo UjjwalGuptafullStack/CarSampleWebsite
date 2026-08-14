@@ -244,6 +244,7 @@ export const servicesDetail: Record<ServiceSlug, ServiceDetail> = {
     name: "Paint Correction",
     shortDescription: "Reduction of swirl marks, oxidation and surface imperfections.",
     icon: "polish",
+    heroImage: "/images/wheel-detail.jpg",
     whatIsIt:
       "A machine polishing process that reduces swirl marks, light scratches and oxidation from the clear coat, restoring depth and clarity to the paint before protection is applied.",
     benefits: [

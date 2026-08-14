@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { business, buildWhatsAppLink, servicesSummary } from "@/data/site";
-import { PlaceholderImage } from "@/components/PlaceholderImage";
 import { TrustStrip } from "@/components/TrustStrip";
 import { ServiceIcon } from "@/components/ServiceIcon";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
@@ -105,7 +104,11 @@ export default function Home() {
             description="A real transformation says more than a paragraph ever could."
           />
           <div className="mt-10">
-            <BeforeAfterSlider caption="Sample before/after layout — replace with real project photography before launch." />
+            <BeforeAfterSlider
+              beforeImage="/images/detailing-wash.jpg"
+              afterImage="/images/hero-car.jpg"
+              caption="Illustrative photos, not an actual before/after of the same vehicle — replace with real project photography before launch."
+            />
           </div>
         </div>
       </section>
@@ -151,7 +154,20 @@ export default function Home() {
               </div>
             ) : null}
           </div>
-          <PlaceholderImage className="aspect-[4/5] w-full rounded-2xl" label="Studio / technician photo" />
+          <div>
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl">
+              <Image
+                src="/images/technician-work.jpg"
+                alt="Technician servicing a vehicle — illustrative photo"
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
+            <p className="mt-2 text-xs text-muted">
+              Illustrative stock photo — replace with a real studio/technician photo before launch.
+            </p>
+          </div>
         </div>
       </section>
 

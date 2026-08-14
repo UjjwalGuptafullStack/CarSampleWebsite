@@ -1,16 +1,21 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
+import Image from "next/image";
 import { PlaceholderImage } from "@/components/PlaceholderImage";
 import { DragIcon } from "@/components/icons";
 
 export function BeforeAfterSlider({
   beforeLabel = "Before",
   afterLabel = "After",
+  beforeImage,
+  afterImage,
   caption,
 }: {
   beforeLabel?: string;
   afterLabel?: string;
+  beforeImage?: string;
+  afterImage?: string;
   caption?: string;
 }) {
   const [position, setPosition] = useState(50);
@@ -57,18 +62,37 @@ export function BeforeAfterSlider({
       >
         {/* After — full-bleed base layer */}
         <div className="absolute inset-0">
-          <PlaceholderImage className="h-full w-full" label={`${afterLabel} — vehicle photo`} variant="light" />
+          {afterImage ? (
+            <Image
+              src={afterImage}
+              alt={`${afterLabel} — illustrative photo`}
+              fill
+              sizes="(min-width: 768px) 800px, 100vw"
+              className="object-cover"
+              draggable={false}
+            />
+          ) : (
+            <PlaceholderImage className="h-full w-full" label={`${afterLabel} — vehicle photo`} variant="light" />
+          )}
           <span className="absolute left-4 top-4 rounded-full bg-black/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
             {afterLabel}
           </span>
         </div>
 
         {/* Before — same full-bleed layer, clipped to the slider position via inset() */}
-        <div
-          className="absolute inset-0"
-          style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
-        >
-          <PlaceholderImage className="h-full w-full" label={`${beforeLabel} — vehicle photo`} variant="dark" />
+        <div className="absolute inset-0" style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}>
+          {beforeImage ? (
+            <Image
+              src={beforeImage}
+              alt={`${beforeLabel} — illustrative photo`}
+              fill
+              sizes="(min-width: 768px) 800px, 100vw"
+              className="object-cover"
+              draggable={false}
+            />
+          ) : (
+            <PlaceholderImage className="h-full w-full" label={`${beforeLabel} — vehicle photo`} variant="dark" />
+          )}
           <span className="absolute left-4 top-4 rounded-full bg-black/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
             {beforeLabel}
           </span>

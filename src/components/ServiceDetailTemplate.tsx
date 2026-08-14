@@ -126,7 +126,11 @@ export function ServiceDetailTemplate({ service }: { service: ServiceDetail }) {
         <div className="container-page">
           <SectionHeading eyebrow="See The Difference" title="Before & after" />
           <div className="mt-8">
-            <BeforeAfterSlider caption={`Sample layout for ${service.name} — replace with real project photography.`} />
+            <BeforeAfterSlider
+              beforeImage="/images/detailing-wash.jpg"
+              afterImage={service.heroImage ?? "/images/hero-car.jpg"}
+              caption={`Illustrative photos, not an actual before/after for this service — replace with real ${service.name} project photography.`}
+            />
           </div>
         </div>
       </section>

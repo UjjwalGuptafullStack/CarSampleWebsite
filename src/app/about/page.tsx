@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { business } from "@/data/site";
-import { PlaceholderImage } from "@/components/PlaceholderImage";
 import { ProcessSection } from "@/components/ProcessSection";
 import { CtaBanner } from "@/components/CtaBanner";
 import { SectionHeading } from "@/components/ui";
@@ -35,7 +35,20 @@ export default function AboutPage() {
             launch.
           </p>
         </div>
-        <PlaceholderImage className="aspect-[4/3] w-full rounded-2xl" label="Studio / team photo" />
+        <div>
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
+            <Image
+              src="/images/garage-exterior.jpg"
+              alt="Vehicle outside a detailing garage — illustrative photo"
+              fill
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
+          <p className="mt-2 text-xs text-muted">
+            Illustrative stock photo — replace with a real studio/team photo before launch.
+          </p>
+        </div>
       </section>
 
       <ProcessSection />

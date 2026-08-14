@@ -16,7 +16,7 @@ export default function OurWorkPage() {
         <SectionHeading
           eyebrow="Our Work"
           title="Recent transformations"
-          description="Filter by category to see the kind of work we do most — real project photography will replace these placeholders once approved for use."
+          description="Filter by category to see the kind of work we do most. Photos shown are illustrative stock images for this demo — real project photography will replace them once approved for use."
         />
         <div className="mt-10">
           <GalleryGrid />
